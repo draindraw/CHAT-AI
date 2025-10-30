@@ -5,7 +5,7 @@ from openai import OpenAI
 
 client = OpenAI(
   base_url="https://openrouter.ai/api/v1",
-  api_key="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",
+  api_key="API",
 )
 
 def get_last_sender(chat_log: str) -> str | None:
@@ -92,4 +92,5 @@ while True:
         pyautogui.press("enter")
 
          # ✅ Exit after sending the message
+
         exit()
