@@ -2,7 +2,7 @@ from openai import OpenAI
 
 client = OpenAI(
   base_url="https://openrouter.ai/api/v1",
-  api_key="",
+  api_key="APIKEY",
 )
 command='''
 // happens automatically done by the model
@@ -21,3 +21,4 @@ completion = client.chat.completions.create(
 )
 
 print(completion.choices[0].message.content)
+
